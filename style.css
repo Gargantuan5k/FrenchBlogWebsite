@@ -39,6 +39,61 @@ p {
 }
 
 
+/* Styling for page translation popup */
+
+.noload {
+    display: none;
+}
+
+.loadElement {
+    display: block;
+}
+
+#popUpMain {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1001;
+}
+
+#popup {
+    width: 500px;
+    height: 250px;
+    background-image: url('./Assets/uk_flag_desaturated.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 10px 10px #333333;
+    text-align: center;
+}
+
+#translateOpt-popupHeading {
+    font-family: 'Rockwell';
+    transform: translateY(30px);
+}
+
+#translate-btn, #submit-no {
+    /* transform: translateY(50px); */
+    margin-top: 50px;
+    padding: 15px 20px;
+    border: 2px solid #ffffff;
+    background-color: #f22e2e;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Rockwell';
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+#translate-btn:hover, #submit-no:hover {
+   font-size: 25px;
+   cursor: pointer;
+}
+
 
 /* global styling */
 

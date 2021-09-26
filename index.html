@@ -14,16 +14,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.21/swiper-bundle.min.css" integrity="sha512-IRKZqCqrCZ9z2mWSMfIzccLd9NsTXgNBvJvX2M+IYVOr60b4cm+/0Cbc2bjiOPgGu7CLmS4Ety1vUUZqqMm1pw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <!-- swiper slider css file -->
+
+    <script src="./popups.js"></script>
+
 </head>
 
-<body>
+<body onload="loadLanguagePopup()">
     <!-- Header -->
-
-    <div id="loading"></div>
-    <div id="popUpMain">
+    <div id="popUpMain" class="noload">
+        <!-- TODO: Add page translation -->
         <div id="popup">
             <h1 id="translateOpt-popupHeading"> Don’t speak French? </h1>
-            <button id="translate-btn" onClick="translatePageEng()"> Switch to English </button>
+            <button id="translate-btn" onClick="translatePageEng()" title="Note: Translation may not be perfect"> Switch to English </button>
             <button id="submit-no"> No thanks </button>
         </div>
     </div>
