@@ -16,10 +16,9 @@
     <!-- Icon -->
     <link rel='shortcut icon' type='image/x-icon' href='./Assets/favicon-round.ico' />
 
-    <script src="./popups.js"></script>
-    <script src="./translators.js"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!-- Include Google Translate API -->
-    <script src="./dropdowns.js"></script>
+
+    <script src="./js/translator.js"></script>
 
 </head>
 
@@ -29,7 +28,7 @@
     <header>
         <header id="header" class="shadow bg-light">
             <nav class="container navbar">
-                <a href="/index.html" class="nav-brand text-dark">Blog Français</a>
+                <a href="./index.html" class="nav-brand text-dark">Blog Français</a>
                 <!-- Collapse on toggle button click -->
                 <button class="toggle-button">
             <span><i class="fas fa-bars"></i></span>
@@ -368,11 +367,11 @@
                         <h2 class="footer-title secondary-title">Médias sociaux</h2>
                         <div class="tags social">
                             <div class="d-flex flex-wrap">
-                                <a href="#" class="nav-link btn text-primary"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="nav-link btn text-primary"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="nav-link btn text-primary"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="nav-link btn text-primary"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" class="nav-link btn text-primary" id="twitter"><i class="fab fa-twitter" title="Follow the site creators on Twitter"></i></a>
+                                <a href="#" class="nav-link btn text-primary" id="insta"><i class="fab fa-instagram" title="Follow the site creators on Instagram"></i></a>
+                                <a href="#" class="nav-link btn text-primary" id="github"><i class="fab fa-github" title="View the source code on GitHub"></i></a>
                             </div>
+                            <script src="./js/links.js"></script>
                         </div>
                     </div>
                 </div>
@@ -384,7 +383,7 @@
         <!-- swiper slider lib -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.0-alpha.21/swiper-bundle.min.js" integrity="sha512-tvodlm76/5FmjtTQ66p35nUaJbgLpjsFWjAYKJsvrTqa6ajMEp3bJqbvwl77GPPg/SiR8K5ogtym3Qgi+Z0uYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- custom javascript main.js file -->
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
