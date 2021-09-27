@@ -12,11 +12,12 @@
     --secondary-color: #2ec4b6;
     --border: #e9ecef;
     --fsize-larger: 25px;
+    --font-primary: 'Montserrat', sans-serif;
 }
 
 body {
     background-color: rgb(226, 218, 218);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primary);   
     padding: 0;
     margin: 0;
 }
@@ -35,11 +36,20 @@ header {
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primary);
 }
 
 
 /* Styling for page translation popup */
+
+address, span, .phone, .email, .mt-2 {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.secondary-title span {
+    color: #000000;
+}
 
 .noload {
     display: none;
@@ -53,7 +63,7 @@ p {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);   /* Slightly transparent white */
     z-index: 1001;
 }
 
@@ -66,8 +76,10 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 10px 10px #333333;
+    box-shadow: 10px 10px 10px 0px #333333;
     text-align: center;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
 }
 
 #translateOpt-popupHeading {
@@ -176,7 +188,7 @@ p {
 }
 
 .content {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primary);
 }
 
 .object-fit {
@@ -290,7 +302,7 @@ p {
     font-size: 18px;
     margin: 12px;
     color: var(--dark);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primary);
     -webkit-transition: font-size .5s ease;
     -moz-transition: font-size .5s ease;
     -o-transition: font-size .5s ease;
@@ -416,7 +428,7 @@ p {
     padding: 1em;
     font-size: 18px;
     margin-right: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-primary);
 }
 
 

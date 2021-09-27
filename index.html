@@ -16,6 +16,8 @@
     <!-- swiper slider css file -->
 
     <script src="./popups.js"></script>
+    <script src="./translators.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <!-- Include Google Translate API -->
 
 </head>
 
@@ -24,9 +26,10 @@
     <div id="popUpMain" class="noload">
         <!-- TODO: Add page translation -->
         <div id="popup">
+            <div id="google_translate_element" style="display:none"></div>
             <h1 id="translateOpt-popupHeading"> Don’t speak French? </h1>
             <button id="translate-btn" onClick="translatePageEng()" title="Note: Translation may not be perfect"> Switch to English </button>
-            <button id="submit-no"> No thanks </button>
+            <button id="submit-no" onClick="closeLanguagePopup()"> No thanks </button>
         </div>
     </div>
 
@@ -135,7 +138,7 @@
                                 </div>
                                 <div class="card-body text-center px-1">
                                     <a href="#" class="text-title display-1 text-dark">
-                           Notre Dame
+                           Notre-Dame
                            </a>
                                     <p class="secondary-title text-secondary display-3">
                                         <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
@@ -277,15 +280,16 @@
             <div class="container">
                 <div class="row mb-3">
                     <div class="col-3">
-                        <h2 class="footer-title secondary-title">About Us</h2>
+                        <h2 class="footer-title secondary-title">À propos de nous</h2>
                         <div class="secondary-title text-secondary">
                             <p class="mt-2">
-                                Built by Kanishk Malhotra and Siddharth Vivek, French students of class 10 B :)
+                                Ce site a été crée par Siddharth Vivek et Kanishk Malhotra, étudiants français de classe 10 B :)
                             </p>
                             <address>
-                        <i class = "fas fa-map-marker-alt text-dark"></i>
-                        India
-                     </address>
+                                <i class = "fas fa-map-marker-alt text-dark"></i>
+                                India
+                            </address>
+                            
                             <div class="phone">
                                 <i class="fas fa-mobile text-dark"></i> 123-456-789
                             </div>
@@ -304,7 +308,7 @@
                                             <img src="Assets/NotreDame.jpg" class="object-fit px-1">
                                             <div class="px-1">
                                                 <a href="#" class="text-title display-2 text-dark">
-                              The Beautiful Notre Dame
+                                                    La belle Notre-Dame
                               </a>
                                                 <p class="secondary-title text-secondary display-32">
                                                     <span><i class = "far fa-clock text-dark"></i>Sept 26, 2021</span>
