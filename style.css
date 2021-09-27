@@ -117,7 +117,8 @@ span,
 /* global styling */
 
 .far,
-.fas {
+.fas,
+.fab {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -314,6 +315,8 @@ span,
     font-family: var(--font-primary);
     /* transition: font-size .5s ease; */
 }
+
+
 /* 
 .nav-link:hover {
     font-size: var(--fsize-larger);
@@ -380,6 +383,7 @@ span,
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* .Navigation Menu */
 
@@ -530,13 +534,22 @@ span,
 
 /* sticky */
 
+
 /* Articles only */
+
 .author-avatar img {
     transition: all 0.2s ease-in-out;
 }
+
 .author-avatar img:hover {
     transform: scale(1.5);
 }
+
+.form-control:hover,
+.submitBtn {
+    cursor: not-allowed;
+}
+
 
 /* Media Query */
 

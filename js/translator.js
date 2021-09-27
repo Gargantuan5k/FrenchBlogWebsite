@@ -1,5 +1,5 @@
 function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: "fr"}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: "fr", includedLanguages: "en,fr,hi,de,es"}, 'google_translate_element');
 }
 
 function translatePage(langCode) {
