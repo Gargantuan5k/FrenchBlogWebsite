@@ -127,7 +127,7 @@ span,
 }
 
 .text-secondary {
-    color: var(--secondary);
+    color: var(--dark);
 }
 
 .text-dark {
@@ -530,6 +530,13 @@ span,
 
 /* sticky */
 
+/* Articles only */
+.author-avatar img {
+    transition: all 0.2s ease-in-out;
+}
+.author-avatar img:hover {
+    transform: scale(1.5);
+}
 
 /* Media Query */
 

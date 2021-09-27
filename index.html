@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <!-- Hidden google translate element -->
     <div id="google_translate_element" style="display: none;"></div>
 
     <header>
@@ -35,12 +36,11 @@
             </button>
                 <div class="collapse">
                     <ul class="navbar-nav">
-                        <a href="#" class="nav-link">Page d'Accueil</a>
+                        <a href="./index.html" class="nav-link">Page d'Accueil</a>
                         <a href="#" class="nav-link">Blog</a>
-                        <a href="#" class="nav-link">Pages</a>
-                        <a href="#" class="nav-link">Catégories</a>
-                        <a href="#" class="nav-link">À propos de</a>
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#posts" class="nav-link">Pages</a>
+                        <a href="#footer" class="nav-link">À propos de</a>
+                        <a href="#footer" class="nav-link">Contact</a>
                         <div class="nav-link dropdown">
                             <button class="dropdownBtn">Translate
                               <i class="fa fa-caret-down"></i>
@@ -52,7 +52,7 @@
                               <button id="de" class="dropdown-item" onClick="translatePage('de')" title="Diese Seite ins Deutsche übersetzen">Deutsch (🇩🇪)</button>
                               <button id="es" class="dropdown-item" onClick="translatePage('es')" title="Traducir esta página al español">Español (🇪🇸)</button>
                             </div>
-                          </div>
+                        </div>
                     </ul>
                 </div>
                 <!-- Collapse on toggle button click -->
@@ -93,11 +93,13 @@
                             <article id="article">
                                 <div class="card">
                                     <div class="overflow-img">
-                                        <img src="./Assets/Eiffel Tower.jpg" class="img-fluid" alt="">
+                                        <a href="./articles/tour_deiffel.html">
+                                            <img src="./Assets/Eiffel Tower.jpg" class="img-fluid" alt="">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="card-body text-center px-1">
-                                    <a href="#" class="text-title display-1 text-dark">
+                                    <a href="./articles/tour_deiffel.html" class="text-title display-1 text-dark">
                            La Tour D'Eiffel
                            </a>
                                     <p class="secondary-title text-secondary display-3">
@@ -287,15 +289,8 @@
                             </p>
                             <address>
                                 <i class = "fas fa-map-marker-alt text-dark"></i>
-                                Inde
+                                Class 10 B, Apeejay School Nerul
                             </address>
-                            
-                            <div class="phone">
-                                <i class="fas fa-mobile text-dark"></i> 123-456-789
-                            </div>
-                            <div class="email">
-                                <i class="fas fa-envelope text-dark"></i> ...@gmail.com
-                            </div>
                         </div>
                     </div>
                     <div class="col-3">
@@ -309,7 +304,8 @@
                                             <div class="px-1">
                                                 <a href="#" class="text-title display-2 text-dark">
                                                     La belle Notre-Dame
-                              </a>
+                                                </a>
+                                                
                                                 <p class="secondary-title text-secondary display-32">
                                                     <span><i class = "far fa-clock text-dark"></i>Sept 26, 2021</span>
                                                 </p>
