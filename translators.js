@@ -1,7 +1,5 @@
 function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: "fr"}, 'google_translate_element');
-    let translateToolbar = document.getElementsByClassName("skiptranslate");
-    translateToolbar.classList.add("noload");
 }
 
 function translatePageEng() {

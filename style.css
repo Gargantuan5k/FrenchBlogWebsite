@@ -109,7 +109,7 @@ address, span, .phone, .email, .mt-2 {
 
 /* global styling */
 
-.far {
+.far, .fas {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -333,6 +333,16 @@ address, span, .phone, .email, .mt-2 {
     outline: none;
 }
 
+.dropdownBtn {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    font-family: var(--font-primary);
+    color: var(--dark);
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
 
 /* .Navigation Menu */
 
@@ -355,10 +365,25 @@ address, span, .phone, .email, .mt-2 {
 .grid .grid-item {
     width: calc(20% - 20px);
     margin-bottom: 3em;
+    box-shadow: 12px 12px 10px 0px #333333;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+    background: #ffffff;
 }
 
+.overflow-img .img-fluid {
+    border-radius: 10px;
+}
 
-/* .Main Section */
+.text-title {
+    font-weight: 150;
+    transition: all 0.2s ease-in-out;
+}
+
+.text-title:hover {
+    font-size: 28px;
+}
+/* todo */
 
 
 /* footer */
@@ -538,7 +563,13 @@ address, span, .phone, .email, .mt-2 {
     .collapse .nav-link {
         display: block;
         text-align: center;
+        float: left;
     }
+
+    #google_translate_element {
+        display: inline-block;
+    }
+
     .search-box {
         border-right: none;
     }

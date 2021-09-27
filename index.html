@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -21,17 +21,8 @@
 
 </head>
 
-<body onload="loadLanguagePopup()">
-    <!-- Header -->
-    <div id="popUpMain" class="noload">
-        <!-- TODO: Add page translation -->
-        <div id="popup">
-            <div id="google_translate_element" style="display:none"></div>
-            <h1 id="translateOpt-popupHeading"> Don’t speak French? </h1>
-            <button id="translate-btn" onClick="translatePageEng()" title="Note: Translation may not be perfect"> Switch to English </button>
-            <button id="submit-no" onClick="closeLanguagePopup()"> No thanks </button>
-        </div>
-    </div>
+<body>
+    <div id="google_translate_element" style="display: none;"></div>
 
     <header>
         <header id="header" class="shadow bg-light">
@@ -49,6 +40,7 @@
                         <a href="#" class="nav-link">Catégories</a>
                         <a href="#" class="nav-link">À propos de</a>
                         <a href="#" class="nav-link">Contact</a>
+                        
                     </ul>
                 </div>
                 <!-- Collapse on toggle button click -->
@@ -73,16 +65,16 @@
                             <article id="article">
                                 <div class="card">
                                     <div class="overflow-img">
-                                        <a href="./flag.html" class="text-title display-1 text-dark"><img src="./Assets/FrenchFlag.jpg" class="img-fluid" alt=""></a>
+                                        <a href="./articles/flag.html"><img src="./Assets/FrenchFlag.jpg" class="img-fluid" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="card-body text-center px-1">
-                                    <a href="./flag.html" class="text-title display-1 text-dark">
+                                    <a href="./articles/flag.html" class="text-title display-1 text-dark">
                            Le Drapeau Français
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Kanishk Malhotra</span>
                                     </p>
                                 </div>
                             </article>
@@ -101,8 +93,8 @@
                            La Tour D'Eiffel
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -121,8 +113,8 @@
                            L'Arc De Triomphe
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -141,8 +133,8 @@
                            Notre-Dame
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -161,8 +153,8 @@
                            La Musée Du Louvre
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -181,8 +173,8 @@
                            Victor Hugo
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -201,8 +193,8 @@
                            Marie Curie
                            </a>
                                     <p class="secondary-title text-secondary display-3">
-                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span>
-                                        <span><i class = "far fa-comments text-primary"></i></span>
+                                        <span><i class = "far fa-clock text-primary"></i>Sept 26, 2021</span><br />
+                                        <span><i class = "fas fa-pen text-primary"></i>Siddharth Vivek</span>
                                     </p>
                                 </div>
                             </article>
@@ -287,7 +279,7 @@
                             </p>
                             <address>
                                 <i class = "fas fa-map-marker-alt text-dark"></i>
-                                India
+                                Inde
                             </address>
                             
                             <div class="phone">
@@ -299,7 +291,7 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <h2 class="footer-title secondary-title">Feature Post</h2>
+                        <h2 class="footer-title secondary-title">Articles en vedette</h2>
                         <div class="feature-post">
                             <div class="flex-item">
                                 <article class="article">
@@ -325,7 +317,7 @@
                                             <img src="Assets/Marie.jpg" class="object-fit px-1">
                                             <div class="px-1">
                                                 <a href="#" class="text-title display-2 text-dark">
-                              Learn About the Life of Marie Curie
+                                                    Découvrez la vie de Marie Curie
                               </a>
                                                 <p class="secondary-title text-secondary display-32">
                                                     <span><i class = "far fa-clock text-dark"></i>Sept 26, 2021</span>
@@ -342,7 +334,7 @@
                                             <img src="Assets/Arc.jpg" class="object-fit px-1">
                                             <div class="px-1">
                                                 <a href="#" class="text-title display-2 text-dark">
-                              The Story About Arc de Triomphe
+                                                    L'histoire de l'Arc de Triomphe
                               </a>
                                                 <p class="secondary-title text-secondary display-32">
                                                     <span><i class = "far fa-clock text-dark"></i>Sept 26, 2021</span>
@@ -355,7 +347,7 @@
                         </div>
                     </div>
                     <div class="col-3">
-                        <h2 class="footer-title secondary-title">Tags</h2>
+                        <h2 class="footer-title secondary-title">Mots clés</h2>
                         <div class="tags">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="nav-link btn text-primary">French</a>
@@ -364,7 +356,7 @@
                                 <a href="#" class="nav-link btn text-primary">Blog</a>
                             </div>
                         </div>
-                        <h2 class="footer-title secondary-title mt-2">Social</h2>
+                        <h2 class="footer-title secondary-title">Médias sociaux</h2>
                         <div class="tags social">
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="nav-link btn text-primary"><i class="fab fa-facebook-f"></i></a>
