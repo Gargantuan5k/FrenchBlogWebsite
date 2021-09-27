@@ -17,7 +17,7 @@
 
 body {
     background-color: rgb(226, 218, 218);
-    font-family: var(--font-primary);   
+    font-family: var(--font-primary);
     padding: 0;
     margin: 0;
 }
@@ -42,7 +42,11 @@ p {
 
 /* Styling for page translation popup */
 
-address, span, .phone, .email, .mt-2 {
+address,
+span,
+.phone,
+.email,
+.mt-2 {
     color: #ffffff;
     font-weight: 100;
 }
@@ -63,7 +67,8 @@ address, span, .phone, .email, .mt-2 {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.9);   /* Slightly transparent white */
+    background: rgba(255, 255, 255, 0.9);
+    /* Slightly transparent white */
     z-index: 1001;
 }
 
@@ -87,7 +92,8 @@ address, span, .phone, .email, .mt-2 {
     transform: translateY(30px);
 }
 
-#translate-btn, #submit-no {
+#translate-btn,
+#submit-no {
     /* transform: translateY(50px); */
     margin-top: 50px;
     padding: 15px 20px;
@@ -101,15 +107,17 @@ address, span, .phone, .email, .mt-2 {
     transition: all .2s ease-in-out;
 }
 
-#translate-btn:hover, #submit-no:hover {
-   font-size: 25px;
-   cursor: pointer;
+#translate-btn:hover,
+#submit-no:hover {
+    font-size: 25px;
+    cursor: pointer;
 }
 
 
 /* global styling */
 
-.far, .fas {
+.far,
+.fas {
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -270,7 +278,7 @@ address, span, .phone, .email, .mt-2 {
 
 .shadow {
     box-shadow: rgba(32, 47, 131, 0.781) 0px 8px 24px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 
@@ -285,6 +293,7 @@ address, span, .phone, .email, .mt-2 {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+    overflow: visible;
 }
 
 .nav-brand {
@@ -303,15 +312,12 @@ address, span, .phone, .email, .mt-2 {
     margin: 12px;
     color: var(--dark);
     font-family: var(--font-primary);
-    -webkit-transition: font-size .5s ease;
-    -moz-transition: font-size .5s ease;
-    -o-transition: font-size .5s ease;
-    transition: font-size .5s ease;
+    /* transition: font-size .5s ease; */
 }
-
+/* 
 .nav-link:hover {
     font-size: var(--fsize-larger);
-}
+} */
 
 .search-box {
     display: inline;
@@ -333,16 +339,47 @@ address, span, .phone, .email, .mt-2 {
     outline: none;
 }
 
+.dropdown {
+    display: inline-block;
+}
+
 .dropdownBtn {
     background: transparent;
     border: none;
     font-size: 18px;
-    font-family: var(--font-primary);
+    font-family: inherit;
     color: var(--dark);
-    margin: 5px;
-    transition: all 0.2s ease-in-out;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: none;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: none;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+}
+
+.dropdown-content button:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* .Navigation Menu */
 
@@ -383,6 +420,8 @@ address, span, .phone, .email, .mt-2 {
 .text-title:hover {
     font-size: 28px;
 }
+
+
 /* todo */
 
 
@@ -565,11 +604,9 @@ address, span, .phone, .email, .mt-2 {
         text-align: center;
         float: left;
     }
-
     #google_translate_element {
         display: inline-block;
     }
-
     .search-box {
         border-right: none;
     }
