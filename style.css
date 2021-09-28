@@ -12,12 +12,13 @@
     --secondary-color: #2ec4b6;
     --border: #e9ecef;
     --fsize-larger: 25px;
-    --font-primary: 'Montserrat', sans-serif;
+    --font-family-primary: 'Montserrat', sans-serif;
+    --font-family-title: 'Rockwell'
 }
 
 body {
     background-color: rgb(226, 218, 218);
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
     padding: 0;
     margin: 0;
 }
@@ -36,7 +37,7 @@ header {
 }
 
 p {
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
 }
 
 
@@ -62,57 +63,6 @@ span,
 .loadElement {
     display: block;
 }
-
-#popUpMain {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    /* Slightly transparent white */
-    z-index: 1001;
-}
-
-#popup {
-    width: 500px;
-    height: 250px;
-    background-image: url('./Assets/uk_flag_desaturated.png');
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 10px 10px 10px 0 #333333;
-    text-align: center;
-    border: 10px solid #ffffff;
-    border-radius: 10px;
-}
-
-#translateOpt-popupHeading {
-    font-family: 'Rockwell';
-    transform: translateY(30px);
-}
-
-#translate-btn,
-#submit-no {
-    /* transform: translateY(50px); */
-    margin-top: 50px;
-    padding: 15px 20px;
-    border: 2px solid #ffffff;
-    background-color: #f22e2e;
-    font-weight: bold;
-    color: #ffffff;
-    border-radius: 5px;
-    font-family: 'Rockwell';
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-}
-
-#translate-btn:hover,
-#submit-no:hover {
-    font-size: 25px;
-    cursor: pointer;
-}
-
 
 /* global styling */
 
@@ -155,8 +105,7 @@ span,
 }
 
 .text-title {
-    font-family: Rockwell;
-    /* font-weight: bold; */
+    font-family: var(--font-family-title);
     font-weight: 150;
     transition: all 0.2s ease-in-out;
 }
@@ -205,7 +154,7 @@ span,
 }
 
 .content {
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
 }
 
 .object-fit {
@@ -290,10 +239,6 @@ span,
     overflow: visible;
 }
 
-
-/* section styling */
-
-
 /* Navigation Menu */
 
 .navbar {
@@ -306,7 +251,7 @@ span,
 }
 
 .nav-brand {
-    font-family: Rockwell;
+    font-family: var(--font-family-title);
     font-weight: bold;
     align-self: center;
     font-size: 32px;
@@ -320,15 +265,8 @@ span,
     font-size: 18px;
     margin: 12px;
     color: var(--dark);
-    font-family: var(--font-primary);
-    /* transition: font-size .5s ease; */
+    font-family: var(--font-family-primary);
 }
-
-
-/* 
-.nav-link:hover {
-    font-size: var(--fsize-larger);
-} */
 
 .search-box {
     display: inline;
@@ -394,10 +332,6 @@ span,
     display: block;
 }
 
-
-/* .Navigation Menu */
-
-
 /* Main Section */
 
 #site-main {
@@ -431,9 +365,6 @@ span,
     border-radius: 10px;
 }
 
-/* todo */
-
-
 /* footer */
 
 #footer {
@@ -455,10 +386,6 @@ span,
     padding: 10px 0;
     border-top: 2px solid var(--light);
 }
-
-
-/* .footer */
-
 
 /* article page */
 
@@ -501,12 +428,8 @@ span,
     padding: 1em;
     font-size: 18px;
     margin-right: 10px;
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
 }
-
-
-/* .article page */
-
 
 /* sidebar page(not used) */
 
@@ -523,10 +446,6 @@ span,
     color: var(--light);
 }
 
-
-/* .sidebar page(not used) */
-
-
 /* sticky */
 
 .sticky {
@@ -535,10 +454,6 @@ span,
     z-index: 99;
     width: 100%
 }
-
-
-/* sticky */
-
 
 /* Articles only */
 
@@ -556,7 +471,7 @@ span,
 }
 
 
-/* Media Query */
+/* Media Queries for responsive deign */
 
 .row {
     display: flex;
