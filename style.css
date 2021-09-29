@@ -364,6 +364,10 @@ span,
     transition: all 0.2s ease-in-out;
 }
 
+.grid .grid-arc-item {
+    width: calc(20% - 34px);
+}
+
 .grid .grid-item:hover {
     box-shadow: 10px 10px 12px 0 rgba(0, 0, 0, 0.8);
 }
