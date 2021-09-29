@@ -1,0 +1,22 @@
+{
+  "name": "frenchblogwebsite",
+  "version": "1.0.0",
+  "description": "French Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gargantuan5k/FrenchBlogWebsite.git"
+  },
+  "author": "Siddharth Vivek and Kanishk Malhotra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gargantuan5k/FrenchBlogWebsite/issues"
+  },
+  "homepage": "https://github.com/Gargantuan5k/FrenchBlogWebsite#readme",
+  "dependencies": {
+    "perfect-scrollbar": "^1.5.2"
+  }
+}
