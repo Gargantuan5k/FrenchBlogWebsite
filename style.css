@@ -16,6 +16,10 @@
     --font-family-title: 'Rockwell'
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(226, 218, 218);
     font-family: var(--font-family-primary);
