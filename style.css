@@ -479,6 +479,11 @@ span,
     font-family: var(--font-family-primary);
 }
 
+.title-secondary a {
+    color: #000000;
+    text-decoration: underline;
+}
+
 
 /* sidebar page(not used) */
 

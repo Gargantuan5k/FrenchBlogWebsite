@@ -4,10 +4,12 @@ var kanishkGithub = "https://github.com/KanishkM08";
 var sidGithub = "https://github.com/Gargantuan5k/";
 var projRepo = "https://github.com/Gargantuan5k/FrenchBlogWebsite";
 var sidTwitter = "https://twitter.com/Gargantuan5K";
+var kanishkTwitter = "https://twitter.com/KanishkMalhot15";
 
 document.getElementById("twitter").addEventListener("click", (e) => {
     e.preventDefault();
     window.open(sidTwitter);
+    window.open(kanishkTwitter);
 });
 document.getElementById("insta").addEventListener("click", (e) => {
     e.preventDefault();
