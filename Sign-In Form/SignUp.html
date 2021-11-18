@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Français</title>
+    <link rel="stylesheet" type="text/css" href="./sign-Style.css" />
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel='shortcut icon' type='image/x-icon' href='./Assets/favicon-round.ico' />
+</head>
+
+<body>
+    <header id="header" class="shadow bg-light">
+        <header id="header" class="shadow bg-light">
+            <nav class="container navbar">
+                <a href="../index.html" class="nav-brand text-dark">Blog Français</a>
+            </nav>
+        </header>
+    </header>
+
+    <form action="./LogIn.html" method="post">
+        <div class="containerForm">
+            <label for="fname"><b>First Name</b></label>
+            <label for="lname" class = "mt-ll"><b>Last Name</b></label>
+                <div class = "flexboxContainer">
+                    <input type="text" placeholder="Enter First Name" name="fname" required>          
+                    <input type="text" placeholder="Enter Last Name" name="lname" required>
+                </div>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="email"><b>E-mail</b></label>
+            <input type="email" placeholder="Enter email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <button type="submit" onclick="window.location.href='./logIn.html'">Sign-Up</button>
+
+            <h4 class="mt-l">Already a user?</h4>
+            <button type="button" class="loginbtn" onclick="window.location.href='./Login.html'">Log In</button>
+        </div>    
+    </form> 
+</body>
