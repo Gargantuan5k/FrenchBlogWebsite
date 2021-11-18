@@ -24,7 +24,7 @@ body {
     background-color: rgb(226, 218, 218);
     font-family: var(--font-family-primary);
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 
 a {
@@ -436,8 +436,8 @@ span,
 /* form */
  /* Bordered form */
  form {
-    margin-left: 500px;
-    margin-top: 20px;
+    margin:auto;
+    
     width: 500px;
   }
   
@@ -488,12 +488,6 @@ span,
     background-color: var(--primary-color);
   }
   
-  /* Center the avatar image inside this container */
-  .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px;
-  }
-
   .flexboxContainer{
     display: flex;
     flex-direction: row;
@@ -502,15 +496,9 @@ span,
     align-items: center;   
   }
   
-  /* Avatar image */
-  img.avatar {
-    width: 40%;
-    border-radius: 50%;
-  }
-  
   /* Add padding to containers */
   .containerForm {
-      margin-top: 70px;
+    margin: auto;
     padding: 20px;
   }
   
