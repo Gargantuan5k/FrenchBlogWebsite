@@ -494,7 +494,7 @@ span,
   /* Center the avatar image inside this container */
   .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 24px 0 12px;
   }
   
   /* Avatar image */

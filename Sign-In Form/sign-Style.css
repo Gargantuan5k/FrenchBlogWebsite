@@ -483,7 +483,6 @@ span,
   
   /* Extra style for the cancel button (red) */
   .loginbtn {
-    margin-top: 0px;
     margin-left: 185px;
     width: 100px;
     background-color: var(--primary-color);
@@ -492,7 +491,7 @@ span,
   /* Center the avatar image inside this container */
   .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 24px 0 12px;
   }
 
   .flexboxContainer{
