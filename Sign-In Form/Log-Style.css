@@ -270,6 +270,7 @@ span,
     font-weight: bold;
     align-self: center;
     font-size: 32px;
+    width: auto;
 }
 
 .collapse {

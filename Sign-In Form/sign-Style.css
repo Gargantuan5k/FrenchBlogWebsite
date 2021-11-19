@@ -436,8 +436,7 @@ span,
 /* form */
  /* Bordered form */
  form {
-    margin:auto;
-    
+    margin:auto; 
     width: 500px;
   }
   
